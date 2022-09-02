@@ -1,0 +1,25 @@
+/* .table{
+    margin: auto;
+} */
+/* th{
+    margin-left: 50px;
+} */
+.card {
+  display: flex;
+  background-color: azure;
+  margin: 10px 0px 0px 0px;
+  padding: 12px;
+  z-index: 1;
+  
+  border-radius: 10px;
+}
+.card p {
+  flex: 5;
+}
+.card:hover{
+    background-color: rgb(222, 233, 233);
+    transition:  1s;
+    border: 1px solid gray;
+    
+}
+

@@ -1,0 +1,65 @@
+.main {
+  margin: 100px;
+}
+.container {
+  width: 40%;
+  height: 350px;
+  background-color: azure;
+  float: right;
+  margin-right: 100px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.heading {
+  text-align: center;
+  color: blue;
+}
+.capital {
+  display: flex;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.capital p {
+  flex: 2;
+}
+.lang {
+  padding-top: 15px;
+}
+.langDiv {
+  text-align: center;
+  display: flex;
+}
+.lang,
+.langDiv p {
+  flex: 2;
+}
+.borders {
+  padding-top: 15px;
+}
+.bordersDiv {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.borders,
+.bordersDiv p {
+  flex: 5;
+  text-align: center;
+  justify-content: center;
+  /* padding-top: 10px; */
+}
+.area {
+  text-align: center;
+  display: flex;
+}
+.area p {
+  flex: 2;
+}
+.flag {
+  margin: 30px;
+}
+.img {
+  border-radius: 20px;
+}
