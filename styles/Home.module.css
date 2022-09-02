@@ -3,17 +3,33 @@
  margin-left: 100px;
  margin-right: 100px;
 }
-
+/* 
 .card{
     display: flex;
     margin: auto;
     margin-top: 50px;
 }
 .card p{
+    flex: 4;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 10px;
+} */
+.card {
+    display: flex;
+    margin: 10px 0px 0px 0px;
+    z-index: 1;
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+  .card p {
     flex: 5;
     font-size: 18px;
     font-weight: 600;
-}
+  }
+
+
+
 .search{
     float: right;
     display: flex;

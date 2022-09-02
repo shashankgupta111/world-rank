@@ -1,0 +1,28 @@
+{
+  "name": {
+    "common": "Akhand Bharat",
+    "official": "Akhand Bharat"
+  },
+  "independent": true,
+  "status": "officially-assigned",
+  "unMember": true,
+  "currencies": { "GOLD": { "name": "Gold", "symbol": "Gold" } },
+  "idd": { "root": "+3", "suffixes": ["58"] },
+  "capital": ["Ujjain"],
+  "region": "Akkhand Barat",
+  "subregion": "Northern Europe",
+  "languages": { "san": "Sanskrit", "hin": "Hindi", "dev": "Devnagri" },
+  "area": 1000000000,
+  "flag": "/akhandbharat.jpeg",
+  "population": 5530719112,
+  "gini": { "2018": 50.3 },
+  "flags": {
+    "png": "/akhandbharat.jpeg",
+    "svg": "/akhandbharat.jpeg"
+  },
+  "coatOfArms": {
+    "png": "https://mainfacts.com/media/images/coats_of_arms/fi.png",
+    "svg": "https://mainfacts.com/media/images/coats_of_arms/fi.svg"
+  },
+  "startOfWeek": "Somvar"
+}

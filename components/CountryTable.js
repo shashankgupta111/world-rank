@@ -13,7 +13,7 @@ export default function CountryTable({ countrydata }) {
   return (
     <div>
       <div className={classes.searchBox}>
-        <input className={classes.search} onChange={filterCountry}></input>
+        <input className={classes.search} onChange={filterCountry} placeholder={"Search"}></input>
       </div>
       <div className={classes.card}>
         <p> #</p>

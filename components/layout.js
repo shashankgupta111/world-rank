@@ -35,7 +35,7 @@ const Layout = ({ children, title = "World Ranks" }) => {
       </Head>
 
       <header className={styles.header}>
-        <Link href="/">
+        <Link style={{cursor:'pointer'}} href="/">
           <svg
             width="175"
             height="24"
