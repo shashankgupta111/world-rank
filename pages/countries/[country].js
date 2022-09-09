@@ -12,30 +12,32 @@ const Country = ({ data }) => {
 };
 
 export async function getStaticPaths() {
-  const res = await fetch("https://restcountries.com/v3.1/all");
+  const res = await fetch("http://localhost:5000/");
   const posts = await res.json();
 
   const paths = posts.map((post) => ({
     params: { country: post.name.common },
   }));
- 
-  return { paths:[...paths,{params:{country:'Akhand Bharat'}}], fallback: false };
+
+  return {
+    paths: [...paths, { params: { country: "Akhand Bharat" } }],
+    fallback: false,
+  };
 }
 
 export async function getStaticProps({ params }) {
-  let countryData
-  if(params.country==='Akhand Bharat'){
-      countryData=[myCountry]
-  }
-  else{
+  let countryData;
+  if (params.country === "Akhand Bharat") {
+    countryData = [myCountry];
+  } else {
     const data = await fetch(
-      `https://restcountries.com/v3.1/name/${params.country}`
+      `http://localhost:5000/name?country=${params.country}`
     );
     countryData = await data.json();
   }
   return {
     props: {
-      data: countryData.find((item) => item.name.common === params.country),
+      data: countryData,
     },
   };
 }

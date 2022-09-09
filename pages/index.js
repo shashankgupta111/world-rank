@@ -14,11 +14,11 @@ export default function Home({ data = [] }) {
 }
 
 export async function getStaticProps() {
-  const country = await fetch("https://restcountries.com/v3.1/all");
+  const country = await fetch("http://localhost:5000/");
   const data = await country.json();
   return {
     props: {
-      data: [...data, myCountry].sort((a,b)=>b.area-a.area),
+      data: [...data, myCountry].sort((a, b) => b.area - a.area),
     },
   };
 }
